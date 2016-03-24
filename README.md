@@ -30,17 +30,17 @@ In modern databases transactions also do some other things - like ensure that yo
 ## (Code)
 Given the following tree, describe the nodes at every level.
 
-Level     Tree
-1:          A
-           / \
-2:        B   C
-         / \   \
-3:      D  E    F
+    Level     Tree
+    1:          A
                / \
-4:            G   H
+    2:        B   C
+             / \   \
+    3:      D  E    F
+                   / \
+    4:            G   H
 
-Output:
-Level 1: A
-Level 2: B, C
-Level 3: D, E, F
-Level 4: G, H
+    Output:
+    Level 1: A
+    Level 2: B, C
+    Level 3: D, E, F
+    Level 4: G, H

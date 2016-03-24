@@ -7,7 +7,7 @@ A **deadlock** occurs when the waiting process is still holding on to another re
 
 So, an example:
 
-Resource A and resource B are used by process X and process Y
+Resource _A_ and resource _B_ are used by process _X_ and process _Y_
 
 + _X_ starts to use _A_.
 + _X_ and _Y_ try to start using _B_

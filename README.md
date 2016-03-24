@@ -9,11 +9,11 @@ So, an example:
 
 Resource A and resource B are used by process X and process Y
 
-+ `X` starts to use `A`.
-+ `X` and `Y` try to start using `B`
-+ `Y` 'wins' and gets `B` first
-+ Now `Y` needs to use `A`
-+ `A` is locked by `X`, which is waiting for `Y`
++ _X_ starts to use _A_.
++ _X_ and _Y_ try to start using _B_
++ _Y_ 'wins' and gets _B_ first
++ Now _Y_ needs to use _A_
++ _A_ is locked by _X_, which is waiting for _Y_
 
 The best way to avoid deadlocks is to avoid having processes cross over in this way. Reduce the need to lock anything as much as you can.
 
@@ -21,7 +21,7 @@ In databases avoid making lots of changes to different tables in a single transa
 
 ## What is a transaction.
 
-A transaction is a unit of work that you want to treat as "a whole". It has to either happen in full, or not at all.
+A **transaction** is a unit of work that you want to treat as "a whole". It has to either happen in full, or not at all.
 
 A classical example is transferring money from one bank account to another. To do that you have to first withdraw the amount from the source account, and then deposit it to the destination account. The operation has to succeed in full. If you stop halfway, the money will be lost, and that is Very Bad.
 

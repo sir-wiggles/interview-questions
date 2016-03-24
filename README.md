@@ -9,11 +9,11 @@ A: A **lock** occurs when multiple processes try to access the same resource at 
 
    Resource A and resource B are used by process X and process Y
 
-   	+ X starts to use A.
-   	+ X and Y try to start using B
-   	+ Y 'wins' and gets B first
-   	+ now Y needs to use A
-   	+ A is locked by X, which is waiting for Y
++ X starts to use A.
++ X and Y try to start using B
++ Y 'wins' and gets B first
++ now Y needs to use A
++ A is locked by X, which is waiting for Y
 
    The best way to avoid deadlocks is to avoid having processes cross over in this way. Reduce the need to lock anything as much as you can.
 
